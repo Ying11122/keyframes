@@ -1,0 +1,190 @@
+header{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+
+/* img.logo{
+    position: relative;
+    animation: logo 4s ease-in-out alternate;
+}
+
+/* @keyframes logo{
+    from{
+        left: 0; top: 0px;
+    }
+    25%{
+        left: 200px; top: 50px; 
+    }
+    50%{
+        left: 400px; top: 0px;
+    }
+    75%{
+        left: 600px; top: 50px;
+    }
+    to{
+        left: 800px; top: 0px;
+    }
+
+
+} */
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url(Img/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.eslogan{
+    height: 80px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgb(248, 159, 99); 
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    font-size: 60px;
+    border-radius: 10px;
+    animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0; transform: translateX(-50px); filter: blur(5px);
+    }
+    to{
+        opacity: 1; transform: translateX(0); filter: blur(0);
+    }
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.cuadrado1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 135, 62);
+    position: relative;
+
+    animation: saltos1 2s infinite;
+    animation-direction: alternate;
+    transition: border-radius 0.2s ease;
+}
+
+.cuadrado2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(141, 40, 189);
+    position: relative;
+
+    animation: saltos2 1s infinite ease;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+    transition: border-radius 0.2s ease;
+}
+
+.cuadrado3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 135, 62);
+    position: relative;
+
+    animation: saltos1 2s infinite;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+    transition: border-radius 0.2s ease;
+}
+
+.cuadrado4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(141, 40, 189);
+    position: relative;
+
+    animation: saltos2 1s infinite ease;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+    transition: border-radius 0.2s ease;
+}
+
+.cuadrado5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 135, 62);
+    position: relative;
+
+    animation: saltos1 2s infinite;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+    transition: border-radius 0.2s ease;
+}
+
+.cuadrado6{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(141, 40, 189);
+    position: relative;
+
+    animation: saltos2 1s infinite ease;
+    animation-direction: alternate;
+    animation-delay: 0.3s;
+    transition: border-radius 0.2s ease;
+}
+
+.c:hover{
+    border-radius: 50%;
+}
+
+.gif{
+    width: 200px;
+    height: auto;
+    display: block;
+    position: relative;
+    animation: movimiento 2s 5;
+    animation-fill-mode: forwards;
+}
+
+@keyframes saltos1{
+    from{
+        top: 550px;
+    }
+    50%{
+        background-color: black;
+    }
+    to{
+        top: 0px;
+    }
+    
+}
+
+@keyframes saltos2{
+    from{
+        top: 500px;
+    }
+    50%{background-color: blue;}
+    to{
+        top: 0px;
+    }
+    
+}
+
+@keyframes movimiento{
+    from{
+        left: -10px;
+    }
+    to{
+        left: 800px;
+    }
+}
